@@ -5,11 +5,11 @@ This repo contains all my personal Stable Diffusion creations with Deforum and t
 Table of Contents
 - [Introduction](#introduction)
 - [Usage](#usage)
-- [Settings Guide](#settingsguide)
+- [Settings Guide](<#settings guide>)
 - [License](#license)
 
 ## Introduction
-![Stable Diffusion Deforum](https://github.com/deforum-art/deforum-stable-diffusion) is an AI Art Generating tool that can create videos using AI generated images. You can edit configurations to create a variety of differing styles and movements. An example of a long, detailed rendering is here: ![Pink Floyd - Echoes \(A.I. Generated Music Video\)](https://www.youtube.com/watch?v=kGLo8tl5sxs).
+[Stable Diffusion Deforum](https://github.com/deforum-art/deforum-stable-diffusion) is an AI Art Generating tool that can create videos using AI generated images. You can edit configurations to create a variety of differing styles and movements. An example of a long, detailed rendering is here: [Pink Floyd - Echoes \(A.I. Generated Music Video\)](https://www.youtube.com/watch?v=kGLo8tl5sxs).
 In this README, I will describe basic usage, provide supplementary resources, and explain the settings to create your own Deforum rendering.
 
 ## Usage
@@ -19,7 +19,7 @@ Each Cells is as follows:
 - Environment Setup: Required configurations for notebook.
 - Path Setup: Setup up of local drive path for storage (You'll need to sign in with your gmail, I used my school email since it has unlimited space).
 - Model Setup: Downloads (or uses existing) AI models required for Deforum.
-- Settings: Collects all input settings (See [Seetings Guide](#settingsguide) below for detailed instruction on settings).
+- Settings: Collects all input settings (See [Seetings Guide](<#settings guide>) below for detailed instruction on settings).
 - Prompts: Input prompts at frame.
 - Load Settings: Will load settings and run image creation.
 - Create Video from Frames: Creates a video from generated frames.
@@ -28,7 +28,7 @@ Each Cells is as follows:
 Note that from my file, you need to change the input image for it to work, as this is the starter image. After that, running it should be as simple as running the cells and waiting.
 Another important note is that the video cannot be created unless all frames are finished and that might take some time. It takes about 5-10 seconds to create each frame.
 
-You can also refer to this video, but note it uses a local version instead of Google Colab: ![Create Infinite AI DEFORUM Animations | Stable Diffusion Tutorial](https://www.youtube.com/watch?v=bicPayZDI60).
+You can also refer to this video, but note it uses a local version instead of Google Colab: [Create Infinite AI DEFORUM Animations | Stable Diffusion Tutorial](https://www.youtube.com/watch?v=bicPayZDI60).
 
 Everytime you run the load settings cell, the settings are saved in the drive folder with the images. When creating the video, make sure to disable skip\_video\_for\_run\_all.
 
