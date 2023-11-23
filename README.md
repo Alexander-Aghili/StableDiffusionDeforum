@@ -5,7 +5,7 @@ This repo contains all my personal Stable Diffusion creations with Deforum and t
 Table of Contents
 - [Introduction](#introduction)
 - [Usage](#usage)
-- [Settings Guide](<#settings guide>)
+- [Settings Guide](#settings-guide>)
 - [License](#license)
 
 ## Introduction
@@ -19,7 +19,7 @@ Each Cells is as follows:
 - Environment Setup: Required configurations for notebook.
 - Path Setup: Setup up of local drive path for storage (You'll need to sign in with your gmail, I used my school email since it has unlimited space).
 - Model Setup: Downloads (or uses existing) AI models required for Deforum.
-- Settings: Collects all input settings (See [Seetings Guide](<#settings guide>) below for detailed instruction on settings).
+- Settings: Collects all input settings (See [Seetings Guide](#settings-guide) below for detailed instruction on settings).
 - Prompts: Input prompts at frame.
 - Load Settings: Will load settings and run image creation.
 - Create Video from Frames: Creates a video from generated frames.
