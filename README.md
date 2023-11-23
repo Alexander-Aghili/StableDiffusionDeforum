@@ -5,7 +5,7 @@ This repo contains all my personal Stable Diffusion creations with Deforum and t
 Table of Contents
 - [Introduction](#introduction)
 - [Usage](#usage)
-- [Settings Guide](#settings-guide>)
+- [Settings Guide](#settings-guide)
 - [License](#license)
 
 ## Introduction
