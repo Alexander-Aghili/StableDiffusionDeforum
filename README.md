@@ -5,11 +5,11 @@ This repo contains all my personal Stable Diffusion creations with Deforum and t
 Table of Contents
 - [Introduction](#introduction)
 - [Usage](#usage)
-- [Settings Guide](#settings guide)
+- [Settings Guide](#settingsguide)
 - [License](#license)
 
 ## Introduction
-![https://github.com/deforum-art/deforum-stable-diffusion](Stable Diffusion Deforum) is an AI Art Generating tool that can create videos using AI generated images. You can edit configurations to create a variety of differing styles and movements. An example of a long, detailed rendering is here: ![https://www.youtube.com/watch?v=kGLo8tl5sxs](Pink Floyd - Echoes \(A.I. Generated Music Video\)).
+![Stable Diffusion Deforum](https://github.com/deforum-art/deforum-stable-diffusion) is an AI Art Generating tool that can create videos using AI generated images. You can edit configurations to create a variety of differing styles and movements. An example of a long, detailed rendering is here: ![Pink Floyd - Echoes \(A.I. Generated Music Video\)](https://www.youtube.com/watch?v=kGLo8tl5sxs).
 In this README, I will describe basic usage, provide supplementary resources, and explain the settings to create your own Deforum rendering.
 
 ## Usage
@@ -19,7 +19,7 @@ Each Cells is as follows:
 - Environment Setup: Required configurations for notebook.
 - Path Setup: Setup up of local drive path for storage (You'll need to sign in with your gmail, I used my school email since it has unlimited space).
 - Model Setup: Downloads (or uses existing) AI models required for Deforum.
-- Settings: Collects all input settings (See [Seetings Guide](#settings guide) below for detailed instruction on settings).
+- Settings: Collects all input settings (See [Seetings Guide](#settingsguide) below for detailed instruction on settings).
 - Prompts: Input prompts at frame.
 - Load Settings: Will load settings and run image creation.
 - Create Video from Frames: Creates a video from generated frames.
@@ -28,7 +28,7 @@ Each Cells is as follows:
 Note that from my file, you need to change the input image for it to work, as this is the starter image. After that, running it should be as simple as running the cells and waiting.
 Another important note is that the video cannot be created unless all frames are finished and that might take some time. It takes about 5-10 seconds to create each frame.
 
-You can also refer to this video, but note it uses a local version instead of Google Colab: ![https://www.youtube.com/watch?v=bicPayZDI60](Create Infinite AI DEFORUM Animations | Stable Diffusion Tutorial)
+You can also refer to this video, but note it uses a local version instead of Google Colab: ![Create Infinite AI DEFORUM Animations | Stable Diffusion Tutorial](https://www.youtube.com/watch?v=bicPayZDI60).
 
 Everytime you run the load settings cell, the settings are saved in the drive folder with the images. When creating the video, make sure to disable skip\_video\_for\_run\_all.
 
@@ -215,71 +215,20 @@ Include prompts at frames to guide the image creation.
 - **C**: Constant for speed control.
 - **f**: Constant for speed control.
 
-### `skip_video_for_run_all` (Boolean)
-- **Description:** If set to `True`, it skips the video creation process.
-- **Default:** `False`
-- **Use:** Set to `True` to skip video creation during script execution.
-
-### `create_gif` (Boolean)
-- **Description:** If set to `True`, it will create a GIF along with the video.
-- **Default:** `False`
-- **Use:** Determines whether or not to create a GIF along with the video.
-
-### `ffmpeg_mode` (String)
-- **Description:** Specifies the mode for handling ffmpeg settings.
-- **Options:** "auto", "manual", "timestring"
-- **Default:** "auto"
-- **Use:** Determines how ffmpeg settings such as output directory and time string are handled.
-
-### `ffmpeg_outdir` (String)
-- **Description:** Output directory for ffmpeg.
-- **Default:** "" (empty string)
-- **Use:** Specifies the directory where the output files will be saved.
-
-### `ffmpeg_timestring` (String)
-- **Description:** Time string for ffmpeg.
-- **Default:** "" (empty string)
-- **Use:** Provides a time string for ffmpeg, used in the naming of output files.
-
-### `ffmpeg_image_path` (String)
-- **Description:** Path for ffmpeg images.
-- **Default:** "" (empty string)
-- **Use:** Specifies the path where the images processed by ffmpeg will be saved.
-
-### `ffmpeg_mp4_path` (String)
-- **Description:** Path for ffmpeg MP4 video.
-- **Default:** "" (empty string)
-- **Use:** Specifies the path where the MP4 video created by ffmpeg will be saved.
-
-### `ffmpeg_gif_path` (String)
-- **Description:** Path for ffmpeg GIF.
-- **Default:** "" (empty string)
-- **Use:** Specifies the path where the GIF created by ffmpeg will be saved.
-
-### `ffmpeg_extension` (String)
-- **Description:** File extension for ffmpeg output images.
-- **Default:** "png"
-- **Use:** Specifies the file extension for the images processed by ffmpeg.
-
-### `ffmpeg_maxframes` (Integer)
-- **Description:** Maximum number of frames for ffmpeg.
-- **Default:** 200
-- **Use:** Specifies the maximum number of frames to be processed by ffmpeg.
-
-### `ffmpeg_fps` (Integer)
-- **Description:** Frames per second for ffmpeg.
-- **Default:** 12
-- **Use:** Specifies the number of frames per second for the output video.
-
-### `display_ffmpeg` (Boolean)
-- **Description:** If set to `True`, displays ffmpeg command during execution.
-- **Default:** `True`
-- **Use:** Determines whether to display the ffmpeg command during execution.
-
-### `debug` (Boolean)
-- **Description:** If set to `True`, enables debugging information during execution.
-- **Default:** `False`
-- **Use:** Determines whether to enable debugging information during script execution.
+## Video Creation Parameters
+- **skip_video_for_run_all (Boolean):** If set to True, it skips the video creation process.
+- **create_gif (Boolean):** If set to True, it will create a GIF along with the video.
+- **ffmpeg_mode (String):** Specifies the mode for handling ffmpeg settings. Options include "auto," "manual," and "timestring." Default is "auto," determining how ffmpeg settings such as output directory and time string are handled.
+- **ffmpeg_outdir (String):** Output directory for ffmpeg. Default is an empty string, specifying the directory where the output files will be saved.
+- **ffmpeg_timestring (String):** Time string for ffmpeg. Default is an empty string, providing a time string for ffmpeg, used in the naming of output files.
+- **ffmpeg_image_path (String):** Path for ffmpeg images. Default is an empty string, specifying the path where the images processed by ffmpeg will be saved.
+- **ffmpeg_mp4_path (String):** Path for ffmpeg MP4 video. Default is an empty string, specifying the path where the MP4 video created by ffmpeg will be saved.
+- **ffmpeg_gif_path (String):** Path for ffmpeg GIF. Default is an empty string, specifying the path where the GIF created by ffmpeg will be saved.
+- **ffmpeg_extension (String):** File extension for ffmpeg output images. Default is "png," specifying the file extension for the images processed by ffmpeg.
+- **ffmpeg_maxframes (Integer):** Maximum number of frames for ffmpeg. Default is 200, specifying the maximum number of frames to be processed by ffmpeg.
+- **ffmpeg_fps (Integer):** Frames per second for ffmpeg. Default is 12, specifying the number of frames per second for the output video.
+- **display_ffmpeg (Boolean):** If set to True, displays ffmpeg command during execution. Default is True, determining whether to display the ffmpeg command during execution.
+- **debug (Boolean):** If set to True, enables debugging information during execution. Default is False, determining whether to enable debugging information during script execution.
 
 
 ## License
